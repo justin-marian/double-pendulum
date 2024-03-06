@@ -8,7 +8,7 @@ The dynamics of the double pendulum are described using **Lagrangian mechanics**
 
 <div style="display: flex; justify-content: space-between;">
     <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 49%; height: auto;"/>
-    <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 49%; height: auto;"/>
+    <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 49%; height: 400px;"/>
 </div>
 
 ## Physical Parameters

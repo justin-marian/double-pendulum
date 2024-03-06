@@ -1,9 +1,6 @@
 clear; close all; clc;
 g = 9.80665; % m / s^2;
 
-%%                   PHYSICAL PARAMETERS PENDULUMS
-%%               (- YOU CAN MODIFY THESE PARAMETERS -)
-
 % 1ST PENDULUM
 L1_1 = 2.2; L2_1 = 1.3; % m;
 m1_1 = 1.2; m2_1 = 1.7; % kg;
@@ -13,8 +10,6 @@ m1_2 = 1.0; m2_2 = 1.5; % kg;
 % 3RD PENDULUM
 L1_3 = 2.5; L2_3 = 1.8; % m;
 m1_3 = 1.5; m2_3 = 2.0; % kg;
-
-%%                         INITIAL CONDITIONS
 
 % FIRST
 theta10_1 = 50; theta20_1 = 70; % degrees; initial angles
@@ -82,8 +77,6 @@ r_3 = L2_3 / L1_3; % adimensional coefficient
 a11_3 = miu_3; a22_3 = r_3; % main diagonal coefficients (constants)
 
 tic; % Start recurrency time counting.
-
-%%                      RECURRENCY CYCLE PENDULUM
 
 for i = 2:N - 1 % recurrencies cycle
     aux_1 = theta2_1(i) - theta1_1(i);
@@ -169,8 +162,8 @@ y1_2 =  - L1_2 * cos(theta1_2); y2_2 = y1_2 - L2_2 * cos(theta2_2);
 x1_3 = L1_3 * sin(theta1_3); x2_3 = x1_3 + L2_3 * sin(theta2_3);
 y1_3 =  - L1_3 * cos(theta1_3); y2_3 = y1_3 - L2_3 * cos(theta2_3);
 
-%%                   (T) Kinetic + (U) Potential = (H) Total Energy
-%%                        Hamiltonian of the systemtotal energy
+% (T) Kinetic + (U) Potential = (H) Total Energy
+% Hamiltonian of the systemtotal energy
 
 T_1 = 1 / 2 * (m1_1 * L1_1^2 * OM1_1.^2 + ...
     m2_1 * (L1_1^2 * OM1_1.^2 + L2_1^2 * OM2_1.^2 + ...
@@ -231,7 +224,7 @@ yb_2_trace = zeros(1, max_iterations);
 xb_3_trace = zeros(1, max_iterations);
 yb_3_trace = zeros(1, max_iterations);
 
-%%                   Graphic simulation 3 double pendulums
+% Graphic simulation 3 double pendulums
 
 trace_count = 1;
 trace_count_bottom = 1;

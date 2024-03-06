@@ -61,12 +61,12 @@ The **Runge-Kutta** is used for solving ordinary differential equations. Specifi
 
 This pseudocode outlines the implementation of the **Runge-Kutta (RK4)** method for numerically solving ordinary differential equations:
 
-- **$k_1 \gets h \cdot f(t_n, y_n)$:** Computes the slope at $(t_n, y_n)$, scaled by the step size $h$.
-- **$k_2 \gets h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2})$:** Computes the slope at the midpoint, using $k_1$ adjusted state.
-- **$k_3 \gets h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_2}{2})$:** Computes slope at midpoint, using $k_2$ adjusted state.
-- **$k_4 \gets h \cdot f(t_n + h, y_n + k_3)$:** Computes slope at the next step, using $k_3$ adjusted state.
-- **$y_{n+1} \gets y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$:** Updates state using weighted average of slopes.
-- **$t_{n+1} \gets t_n + h$:** Updates time to the next step.
+- **$k_1 \gets h \cdot f(t_n, y_n)$:** Computes the slope at **$(t_n, y_n)$**, scaled by the step size $h$.
+- **$k_2 \gets h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2})$:** Computes the slope at the midpoint, using **$k_1$** adjusted state.
+- **$k_3 \gets h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_2}{2})$:** Computes slope at midpoint, using **$k_2$** adjusted state.
+- **$k_4 \gets h \cdot f(t_n + h, y_n + k_3)$:** Computes slope at the next step, using **$k_3$** adjusted state.
+- **$y_{n+1} \gets y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$:** Updates state using **weighted average** of slopes.
+- **$t_{n+1} \gets t_n + h$:** Updates **time** to the next step.
 
 ## Numerical aproximations
 

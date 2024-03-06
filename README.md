@@ -57,7 +57,7 @@ The **Runge-Kutta** is used for solving ordinary differential equations. Specifi
 
 ### Algorithm Runge-Kutta
 
-This pseudocode outlines the implementation of the **Runge-Kutta (RK4)** method for numerically solving ordinary differential equations:
+This pseudocode outlines the implementation of the **Runge-Kutta (RK4)** method for numerically solving ordinary differential equations (**ODEs**):
 
 - **$k_1 \gets h \cdot f(t_n, y_n)$:** Computes the slope at **$(t_n, y_n)$**, scaled by the step size $h$.
 - **$k_2 \gets h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2})$:** Computes the slope at the midpoint, using **$k_1$** adjusted state.

@@ -4,7 +4,7 @@
 
 The Double Pendulum is a `MATLAB` code that simulates the **motion of three double pendulum systems** with different physical parameters. It calculates the motion of each pendulum using recurrence relations and then visualizes the motion using graphical simulation.
 
-The dynamics of the double pendulum are described using **Lagrangian mechanics** and **Runge-Kutta (RK4)**, which provides a more elegant and efficient way to derive the equations of motion for complex systems like the double pendulum.
+The dynamics of the double pendulum are described using **Lagrangian mechanics** and **Runge-Kutta (RK4)**, which provides a more elegant and efficient way to derive the equations of motion for complex systems.
 
 <div style="display: flex; justify-content: space-between;">
     <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 49%; height: auto;" />
@@ -28,11 +28,13 @@ The dynamics of the double pendulum are described using **Lagrangian mechanics**
 
 The **Lagrangian** ($\mathcal{L}$) of the double pendulum is given by the difference between the **kinetic energy** (**$T$**) and the **potential energy** (**$U$**) of the system:
 
-1. **Kinetic Energy (T):**
-   \[ T = \frac{1}{2} m_1 L_1^2 \dot{\theta}_1^2 + \frac{1}{2} m_2 (L_1^2 \dot{\theta}_1^2 + L_2^2 \dot{\theta}_2^2 + 2 L_1 L_2 \dot{\theta}_1 \dot{\theta}_2 \cos(\theta_1 - \theta_2)) \]
+**Kinetic Energy (T):**
 
-2. **Potential Energy (U):**
-   \[ U = -m_1 g L_1 \cos(\theta_1) - m_2 g (L_1 \cos(\theta_1) + L_2 \cos(\theta_2)) \]
+$$T = \frac{1}{2} m_1 L_1^2 \dot{\theta}_1^2 + \frac{1}{2} m_2 (L_1^2 \dot{\theta}_1^2 + L_2^2 \dot{\theta}_2^2 + 2 L_1 L_2 \dot{\theta}_1 \dot{\theta}_2 \cos(\theta_1 - \theta_2))$$
+
+**Potential Energy (U):**
+
+$$U = -m_1 g L_1 \cos(\theta_1) - m_2 g (L_1 \cos(\theta_1) + L_2 \cos(\theta_2)$$
 
 The total energy of the double pendulum system, given by the ***sum of kinetic energy (T) and potential energy (U), must remain constant over time***. In theory, the total energy should be conserved throughout the simulation due to the **ideal** nature of the system, which assumes the *absence of friction or aerodynamic resistance*.
 
@@ -42,13 +44,9 @@ The equations of motion for the double pendulum are derived by applying the **Eu
 
 The **Euler-Lagrange** equations for the double pendulum are given by:
 
-\[
-\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\theta}_1}\right) - \frac{\partial \mathcal{L}}{\partial \theta_1} = 0
-\]
+$$ \frac{d}{dt} \left(\frac{\partial \mathcal{L}}{\partial \dot{\theta}_1}\right) - \frac{\partial \mathcal{L}}{\partial \theta_1} = 0 $$
 
-\[
-\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\theta}_2}\right) - \frac{\partial \mathcal{L}}{\partial \theta_2} = 0
-\]
+$$ \frac{d}{dt} \left(\frac{\partial \mathcal{L}}{\partial \dot{\theta}_2}\right) - \frac{\partial \mathcal{L}}{\partial \theta_2} = 0 $$
 
 ## Runge-Kutta (ODE4)
 
@@ -70,4 +68,4 @@ This pseudocode outlines the implementation of the **Runge-Kutta (RK4)** method 
 
 ## Numerical aproximations
 
-Due to numerical approximations or errors in the simulation, there might be a small deviation in the total energy, typically within the range of **0.01 to 0.1**. Monitoring this deviation can help ensure the accuracy and stability of the simulation.
+Due to numerical approximations or errors in the simulation, there might be a small deviation in the total energy, typically within the range of **0.01 to 0.1**. Vigilantly monitoring this deviation can help ensure the accuracy and stability of the simulation.

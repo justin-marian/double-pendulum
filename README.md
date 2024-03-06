@@ -7,8 +7,8 @@ The Double Pendulum is a `MATLAB` code that simulates the **motion of three doub
 The dynamics of the double pendulum are described using **Lagrangian mechanics** and **Runge-Kutta (RK4)**, which provides a more elegant and efficient way to derive the equations of motion for complex systems.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 49%; height: auto;" />
-    <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 49%; height: 400px;" />
+    <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 49%; height: auto;"/>
+    <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 49%; height: 400px;"/>
 </div>
 
 ## Physical Parameters
@@ -34,7 +34,7 @@ $$T = \frac{1}{2} m_1 L_1^2 \dot{\theta}_1^2 + \frac{1}{2} m_2 (L_1^2 \dot{\thet
 
 **Potential Energy (U):**
 
-$$U = -m_1 g L_1 \cos(\theta_1) - m_2 g (L_1 \cos(\theta_1) + L_2 \cos(\theta_2)$$
+$$U = -m_1 g L_1 \cos(\theta_1) - m_2 g L_1 \cos(\theta_1) + L_2 \cos(\theta_2)$$
 
 The total energy of the double pendulum system, given by the ***sum of kinetic energy (T) and potential energy (U), must remain constant over time***. In theory, the total energy should be conserved throughout the simulation due to the **ideal** nature of the system, which assumes the *absence of friction or aerodynamic resistance*.
 

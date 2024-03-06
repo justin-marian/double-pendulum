@@ -1,6 +1,9 @@
 clear; close all; clc;
 g = 9.80665; % m / s^2;
 
+%%                               PHYSICAL PARAMETERS PENDULUMS
+%%                           (- YOU CAN MODIFY THESE PARAMETERS -)
+
 % 1ST PENDULUM
 L1_1 = 2.2; L2_1 = 1.3; % m;
 m1_1 = 1.2; m2_1 = 1.7; % kg;
@@ -10,6 +13,8 @@ m1_2 = 1.0; m2_2 = 1.5; % kg;
 % 3RD PENDULUM
 L1_3 = 2.5; L2_3 = 1.8; % m;
 m1_3 = 1.5; m2_3 = 2.0; % kg;
+
+%%                                   INITIAL CONDITIONS
 
 % FIRST
 theta10_1 = 50; theta20_1 = 70; % degrees; initial angles
@@ -28,6 +33,8 @@ theta10_3 = 70; theta20_3 = 90; % degrees; initial angles
 theta10_3 = theta10_3 * pi / 180; theta20_3 = theta20_3 * pi / 180; % conversion to radians
 OM10_3 = 10; OM20_3 =  - 15; % degrees / s; initial angular velocities
 OM10_3 = OM10_3 * pi / 180; OM20_3 = OM20_3 * pi / 180; % conversion to rad / s
+
+%%                           DURATION: frequency and period components 
 
 omega1_1 = sqrt(g / L1_1); omega2_1 = sqrt(g / L2_1);
 T1_1 = 2 * pi / omega1_1; T2_1 = 2 * pi / omega2_1;
@@ -190,6 +197,8 @@ for n = 2:N - 1
     OM1_3(n + 1) = OM1_3(n) + (M1_3 + 2 * M2_3 + 2 * M3_3 + M4_3) / 6;
     OM2_3(n + 1) = OM2_3(n) + (N1_3 + 2 * N2_3 + 2 * N3_3 + N4_3) / 6;
 end
+
+%%                              Plot the results
 
 figure;
 

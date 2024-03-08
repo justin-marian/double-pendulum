@@ -8,10 +8,10 @@ The dynamics of the double pendulum are described using **Lagrangian mechanics**
 
 <p align="center">
     <a href="https://github.com/justin-marian/double-pendulum/tree/main/demo/simulation.mp4" style="width: 75%; height: 100%;" >
-        <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 33%; height: auto;">
+        <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 37%; height: auto;">
     </a>
     <a href="https://github.com/justin-marian/double-pendulum/tree/main/demo/simulation.mp4" style="width: 75%; height: 100%;" >
-        <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 40%; height: auto;">
+        <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 45%; height: auto;">
     </a>
 </p>
 

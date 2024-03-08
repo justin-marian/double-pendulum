@@ -7,8 +7,10 @@ The Double Pendulum is a `MATLAB` code that simulates the **motion of three doub
 The dynamics of the double pendulum are described using **Lagrangian mechanics** and **Runge-Kutta (RK4)**, which provides a more elegant and efficient way to derive the equations of motion for complex systems.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 49%; height: auto;" />
-    <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 49%; height: 400px;" />
+    <a href="https://github.com/justin-marian/double-pendulum/tree/main/demo/simulation.mp4">
+        <img src="/images/three_double_pendulums.png" alt="VELOCITY_POSITION_CURVE" style="width: 49%; height: 98%;" />
+        <img src="/images/runge_kutta_4ode.png" alt="RUNGE_KUTTA_4ODE" style="width: 49%; height: 98%;" />
+    </a>
 </div>
 
 ## Physical Parameters
